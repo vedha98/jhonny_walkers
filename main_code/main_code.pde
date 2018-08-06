@@ -1,7 +1,7 @@
 import processing.video.*;
 import g4p_controls.*;
 Movie mov,mov1;
-Boolean start_pressed =false;
+Boolean start_pressed =false,main_played=false;
 String name;
 public void setup(){
   //size(640,480,JAVA2D);
@@ -37,6 +37,16 @@ public void customGUI(){
 
 }
 public void mainVideo(){
-mov.play();
-image(mov,100,0);
+  if(mov.time()>10){
+mov.pause();
+main_played = true;
+
+}else{
+  image(mov,100,0);
+  mov.play();
+}
+
+
+println(mov.time());
+
 }
