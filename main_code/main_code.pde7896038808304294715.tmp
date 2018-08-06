@@ -1,0 +1,41 @@
+import processing.video.*;
+import g4p_controls.*;
+Movie mov,mov1;
+Boolean start_pressed =false;
+public void setup(){
+  //size(640,480,JAVA2D);
+  fullScreen(JAVA2D);
+  mov = new Movie(this,"video.mp4");
+  
+  
+  createGUI();
+  customGUI();
+  // Place your setup code here
+  
+}
+
+public void draw(){
+  background(0);
+  if(start_pressed){
+  mainVideo();
+  }
+ 
+ 
+  
+  
+  
+  
+}
+void movieEvent(Movie mov){
+mov.read();
+}
+
+// Use this method to add additional statements
+// to customise the GUI controls
+public void customGUI(){
+
+}
+public void mainVideo(){
+mov.play();
+image(mov,100,0);
+}
