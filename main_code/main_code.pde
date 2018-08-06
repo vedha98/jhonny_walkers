@@ -1,12 +1,16 @@
 import processing.video.*;
 import g4p_controls.*;
-Movie mov,mov1;
+Movie mov,menumov1,menumov2,menumov3;
 Boolean start_pressed =false,main_played=false;
 String name;
 public void setup(){
   //size(640,480,JAVA2D);
   fullScreen(JAVA2D);
   mov = new Movie(this,"video.mp4");
+  menumov1 = new Movie(this,"video.mp4");
+  menumov2 = new Movie(this,"video.mp4");
+  menumov3 = new Movie(this,"video.mp4");
+    
   
   
   createGUI();
