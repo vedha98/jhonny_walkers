@@ -35,7 +35,7 @@ public void createGUI(){
   label1.setText("My label");
   label1.setOpaque(false);
   label1.setVisible(false);
- label1.setFont(new Font("Monospaced", Font.PLAIN, 46));
+ label1.setFont(new Font("Monospaced", Font.PLAIN, 30));
 }
 
 // Variable declarations 

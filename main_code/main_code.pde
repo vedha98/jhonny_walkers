@@ -1,5 +1,6 @@
 import processing.video.*;
 import g4p_controls.*;
+import de.looksgood.ani.*;
 Movie mov,menumov1,menumov2,menumov3;
 Boolean start_pressed =false,main_played=false,menu_selected=false,menumov1_started=false,menumov2_started=false,menumov3_started=false,menu1=false,menu2=false,menu3=false;
 String name;
@@ -16,7 +17,7 @@ public void setup(){
   
   createGUI();
   customGUI();
-  // Place your setup code here
+  Ani.init(this);
   
 }
 
